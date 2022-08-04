@@ -22,10 +22,22 @@ public class SortingCities {
     }
 
     //   Find the city which is 52 kms from Zurich
-    public static String[] findCity(String[]distance,int[]kMCheck) {
-        
+    public static String[] findCity(String[] distance, String[] cityName) {
+        int temp = 52
         for (int i = 0; i < distance.length; i++) {
+            if (distance[i] == temp) {
+              cityName[i]=distance[i];
+            }
+        }
+        return cityName;
+    }
 
+    // Find the city which is greater than or equal to 270 kms from Zurich.
+    public void greatCity(int[] distance, String[] city) {
+        for (int i = 0; i < distance.length; i++) {
+            if (distance[i] == 270) {
+                return
+            }
         }
     }
 }
